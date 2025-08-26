@@ -1,0 +1,179 @@
+/*
+ * Simple Custom Chat - Chatbox Styles
+ * This stylesheet provides the basic styling for the chatbox.
+ */
+
+#simple-chat-box {
+  width: 100%;
+  max-width: 400px;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#simple-chat-messages {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse; /* Display messages from the bottom up */
+}
+
+/* -------------------------------------------------------------------------- */
+/* New Product Info Styling */
+/* -------------------------------------------------------------------------- */
+
+.simple-chat-product-info {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.simple-chat-product-info a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.simple-chat-product-info .product-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.simple-chat-product-info .product-details {
+  flex-grow: 1;
+}
+
+.simple-chat-product-info .product-name {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.simple-chat-product-info .product-price {
+  font-size: 0.9em;
+  color: #777;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* General Chat Styles */
+/* -------------------------------------------------------------------------- */
+
+.simple-chat-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  max-width: 85%;
+  position: relative;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.my-message {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+  border-bottom-right-radius: 2px;
+}
+
+.their-message {
+  align-self: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+  border-bottom-left-radius: 2px;
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8em;
+  margin-bottom: 4px;
+}
+
+.my-message .message-header {
+  justify-content: flex-end;
+}
+
+.chat-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.my-message .chat-avatar {
+  order: 2;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.my-message .user-name {
+  display: none; /* Hide my name */
+}
+
+.message-timestamp {
+  font-size: 0.7em;
+  color: #999;
+}
+
+.my-message .message-timestamp {
+  color: #cce5ff;
+}
+
+#simple-chat-typing-indicator {
+  padding: 5px 15px;
+  font-size: 0.8em;
+  color: #666;
+}
+
+#simple-chat-typing-indicator.hidden {
+  display: none;
+}
+
+#simple-chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+#simple-chat-message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1em;
+  outline: none;
+}
+
+#simple-chat-send-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#simple-chat-send-button:hover {
+  background-color: #0056b3;
+}

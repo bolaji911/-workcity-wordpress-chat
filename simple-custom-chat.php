@@ -4,7 +4,7 @@
  * Plugin URI:        https://example.com/simple-custom-chat/
  * Description:       A simple, lightweight chat system for WordPress, built from scratch.
  * Version:           1.4.0
- * Author:            Your Name
+ * Author:            SAMUEL VICTOR
  * Author URI:        https://example.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
